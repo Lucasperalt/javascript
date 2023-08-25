@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .Tienda-River{
     display: flex;
@@ -41,7 +41,7 @@
     opacity: 0.7;
 }
 
-.modal-container{
+.Modal-Container{
     width: 80%;
     margin: 0 10%;
     max-height: 88vh;
@@ -57,7 +57,7 @@
     top: 12vh;
     scrollbar-color: none;
 }
-.modal-container: ::-webkit-scrollbar{
+.Modal-Container: ::-webkit-scrollbar{
     display:none;
 }
 .modal-header{
@@ -72,8 +72,12 @@
 }
 .modal-header-button{
     cursor: pointer;
+    height: 3rem;
+    background: black;
+    color: white;
+    cursor: pointer;
 }
-.modal-container > .modal-content{
+.Modal-container > .modal-content{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -82,7 +86,7 @@
     margin: 10px;
 
 }
-.modal-container > div >img {
+.Modal-container > div >img {
     height: 120px;
     width: 120px;
 }
@@ -91,4 +95,30 @@
     padding: 20px;
     text-align: center;
     padding-top: 20px;
+}
+.modal-content{
+    display: block;
+    justify-content: space-around;
+    align-content: space-between;
+}
+.delete-Product{
+    cursor: pointer;
+}
+.Cantidad-Carrito{
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+    
+}
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
 }
